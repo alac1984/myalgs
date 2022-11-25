@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "linear-algebra"
+version = "0.1.0"
+description = ""
+authors = ["André Carvalho <alac1984@gmail.com>"]
+readme = "README.md"
+packages = [{include = "linear_algebra"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+notebook = "^6.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
