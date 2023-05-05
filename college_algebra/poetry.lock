@@ -537,12 +537,38 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "jupyterthemes"
+version = "0.20.0"
+description = "Select and install a Jupyter notebook theme"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+ipython = ">=5.4.1"
+jupyter-core = "*"
+lesscpy = ">=0.11.2"
+matplotlib = ">=1.4.3"
+notebook = ">=5.6.0"
+
+[[package]]
 name = "kiwisolver"
 version = "1.4.4"
 description = "A fast implementation of the Cassowary constraint solver"
 category = "main"
 optional = false
 python-versions = ">=3.7"
+
+[[package]]
+name = "lesscpy"
+version = "0.15.1"
+description = "Python LESS compiler"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+ply = "*"
 
 [[package]]
 name = "markupsafe"
@@ -839,6 +865,14 @@ python-versions = ">=3.7"
 [package.extras]
 docs = ["furo (>=2022.12.7)", "proselint (>=0.13)", "sphinx (>=6.1.3)", "sphinx-autodoc-typehints (>=1.22,!=1.23.4)"]
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.2.2)", "pytest-cov (>=4)", "pytest-mock (>=3.10)"]
+
+[[package]]
+name = "ply"
+version = "3.11"
+description = "Python Lex & Yacc"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "prometheus-client"
@@ -1221,7 +1255,7 @@ test = ["websockets"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "d0fd9b77a6b5160bb42452488ed930ee6870400282963a6c0888b29fcc7ae8cf"
+content-hash = "50093b0d0af8c011a37e756deddb30b813736e3804a35485b4aa4809f10a4768"
 
 [metadata.files]
 anyio = [
@@ -1521,6 +1555,10 @@ jupyterlab-pygments = [
     {file = "jupyterlab_pygments-0.2.2-py2.py3-none-any.whl", hash = "sha256:2405800db07c9f770863bcf8049a529c3dd4d3e28536638bd7c1c01d2748309f"},
     {file = "jupyterlab_pygments-0.2.2.tar.gz", hash = "sha256:7405d7fde60819d905a9fa8ce89e4cd830e318cdad22a0030f7a901da705585d"},
 ]
+jupyterthemes = [
+    {file = "jupyterthemes-0.20.0-py2.py3-none-any.whl", hash = "sha256:4bd42fc88a06e3afabbe70c2ee25e6467147512993a3cbd9bec57ae3fd2e2fb1"},
+    {file = "jupyterthemes-0.20.0.tar.gz", hash = "sha256:2a8ebc0c84b212ab99b9f1757fc0582a3f53930d3a75b2492d91a7c8b36ab41e"},
+]
 kiwisolver = [
     {file = "kiwisolver-1.4.4-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:2f5e60fabb7343a836360c4f0919b8cd0d6dbf08ad2ca6b9cf90bf0c76a3c4f6"},
     {file = "kiwisolver-1.4.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:10ee06759482c78bdb864f4109886dff7b8a56529bc1609d4f1112b93fe6423c"},
@@ -1590,6 +1628,10 @@ kiwisolver = [
     {file = "kiwisolver-1.4.4-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f6cb459eea32a4e2cf18ba5fcece2dbdf496384413bc1bae15583f19e567f3b2"},
     {file = "kiwisolver-1.4.4-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:36dafec3d6d6088d34e2de6b85f9d8e2324eb734162fba59d2ba9ed7a2043d5b"},
     {file = "kiwisolver-1.4.4.tar.gz", hash = "sha256:d41997519fcba4a1e46eb4a2fe31bc12f0ff957b2b81bac28db24744f333e955"},
+]
+lesscpy = [
+    {file = "lesscpy-0.15.1-py2.py3-none-any.whl", hash = "sha256:8d26e58ed4812b345c2896daea435a28cb3182f87ae3391157085255d4c37dff"},
+    {file = "lesscpy-0.15.1.tar.gz", hash = "sha256:1045d17a98f688646ca758dff254e6e9c03745648e051a081b0395c3b77c824c"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.1.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:665a36ae6f8f20a4676b53224e33d456a6f5a72657d9c83c2aa00765072f31f7"},
@@ -1847,6 +1889,10 @@ pillow = [
 platformdirs = [
     {file = "platformdirs-3.2.0-py3-none-any.whl", hash = "sha256:ebe11c0d7a805086e99506aa331612429a72ca7cd52a1f0d277dc4adc20cb10e"},
     {file = "platformdirs-3.2.0.tar.gz", hash = "sha256:d5b638ca397f25f979350ff789db335903d7ea010ab28903f57b27e1b16c2b08"},
+]
+ply = [
+    {file = "ply-3.11-py2.py3-none-any.whl", hash = "sha256:096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce"},
+    {file = "ply-3.11.tar.gz", hash = "sha256:00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3"},
 ]
 prometheus-client = [
     {file = "prometheus_client-0.16.0-py3-none-any.whl", hash = "sha256:0836af6eb2c8f4fed712b2f279f6c0a8bbab29f9f4aa15276b91c7cb0d1616ab"},
