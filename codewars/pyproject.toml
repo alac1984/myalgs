@@ -11,6 +11,7 @@ python = "^3.10"
 notebook = "^6.5.2"
 jupyterthemes = "^0.20.0"
 ipytest = "^0.13.1"
+pygame = "^2.4.0"
 
 
 [build-system]
