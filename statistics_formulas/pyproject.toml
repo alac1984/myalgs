@@ -7,9 +7,10 @@ readme = "README.md"
 packages = [{include = "statistics_formulas"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.13"
 notebook = "^6.5.4"
 jupyterthemes = "^0.20.0"
+scipy = "^1.11.1"
 
 
 [build-system]
