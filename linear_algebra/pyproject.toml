@@ -9,6 +9,9 @@ packages = [{include = "linear_algebra"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 notebook = "^6.5.2"
+numpy = "^1.25.1"
+matplotlib = "^3.7.2"
+jupyterthemes = "^0.20.0"
 
 
 [build-system]
